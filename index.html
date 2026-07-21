@@ -113,7 +113,14 @@
 </div>
 <script>
 function showQuestionszero() {
-    document.getElementById("questionzero").style.display = "block":none;
+   
+    let q = document.getElementById("questionzero");
+
+    if (q.style.display == "block") {
+        q.style.display = "none";
+    } else {
+        q.style.display = "block";
+    }
 }
 </script>
 
